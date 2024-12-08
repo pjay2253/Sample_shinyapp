@@ -1,0 +1,51 @@
+# HTML file used to create a DNS for shiny example using app.R files
+#HTML Landing Page (index.html)
+#Place the following index.html file in the root directory where your web server serves static content (e.g., /var/www/html).
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My QR Code App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My QR Code App</h1>
+    </header>
+    <main>
+        <p>Click the button below to access the Shiny app.</p>
+        <a href="/qr_app" target="_blank">Launch the QR Code App</a>
+    </main>
+</body>
+</html>
