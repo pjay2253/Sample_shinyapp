@@ -1,7 +1,3 @@
-# HTML file used to create a DNS for shiny example using app.R files
-#HTML Landing Page (index.html)
-#Place the following index.html file in the root directory where your web server serves static content (e.g., /var/www/html).
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +14,27 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 15px;
+            padding: 20px 15px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        header h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2E8B57;
+            margin-top: 10px;
         }
         main {
             padding: 20px;
             text-align: center;
         }
-        a {
+        .qr-section {
+            margin: 20px 0;
+        }
+        a, button {
             display: inline-block;
             padding: 10px 20px;
             margin-top: 20px;
@@ -33,8 +42,9 @@
             background-color: #4CAF50;
             text-decoration: none;
             border-radius: 5px;
+            cursor: pointer;
         }
-        a:hover {
+        a:hover, button:hover {
             background-color: #45a049;
         }
     </style>
@@ -42,10 +52,18 @@
 <body>
     <header>
         <h1>Welcome to My QR Code App</h1>
+        <h2>Improving Patient Outcomes and Clinical Trials With Visual Analytics</h2>
     </header>
     <main>
-        <p>Click the button below to access the Shiny app.</p>
-        <a href="/qr_app" target="_blank">Launch the QR Code App</a>
+        <p>Click the button below to access the portal or scan the QR code to redirect to the clinical trial portal.</p>
+        <div class="qr-section">
+            <img src="10d5e05a-563f-4508-acab-447419a6c9e0.png" alt="Scan QR Code" width="200">
+        </div>
+        <button onclick="window.location.href='https://pcmtrials.com/?utm_source=bing&utm_medium=ppc&utm_campaign=7017V000001GrAj&msclkid=d9be33b8991b16a1597c54eea2eb17b9'">Go to Clinical Trial Portal</button>
+        <br>
+        <a href="https://pcmtrials.com/?utm_source=bing&utm_medium=ppc&utm_campaign=7017V000001GrAj&msclkid=d9be33b8991b16a1597c54eea2eb17b9" target="_blank">
+            Launch the QR Code App
+        </a>
     </main>
 </body>
 </html>
